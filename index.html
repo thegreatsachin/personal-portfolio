@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body onload="loadSection('about')">
-    <header>
-        <nav>
-            <h1>Sachin Yadav</h1>
-            <ul>
+    <header class="site-header">
+        <nav class="site-nav">
+            <a href="#" class="logo">Sachin Yadav</a>
+            <ul class="menu">
                 <li><a href="#about" onclick="loadSection('about')">About Me</a></li>
                 <li><a href="#education" onclick="loadSection('education')">Education</a></li>
                 <li><a href="#skills" onclick="loadSection('skills')">Skills</a></li>
@@ -20,16 +20,20 @@
             </ul>
         </nav>
     </header>
-    <main id="main-content">
-        <section id="about">
-            <h2>About Me</h2>
-            <img src="IMG_20231202_102256_252.jpg" alt="Sachin Yadav" class="profile-img">
-            <p>Hello! I'm Sachin Yadav, an enthusiastic Android developer specializing in custom operating systems and mobile technology. With a solid academic foundation and a commitment to continuous learning, I am passionate about leveraging my skills to drive innovation in the tech industry.</p>
-            <p>My journey in technology began in high school, where I first discovered my interest in programming and software development. Over the years, I have honed my skills through rigorous academic coursework and hands-on projects. I thrive on challenges and enjoy exploring new technologies to expand my expertise.</p>
-            <p>Beyond my professional pursuits, I am an avid learner and enjoy engaging with the developer community. In my free time, I work on personal projects, participate in tech forums, and attend developer meetups to stay updated with the latest trends and advancements in the field.</p>
+    <main id="main-content" class="content">
+        <section id="about" class="hero">
+            <div>
+                <h2>About Me</h2>
+                <p>Hello! I'm Sachin Yadav, an enthusiastic Android developer specializing in custom operating systems and mobile technology. With a solid academic foundation and a commitment to continuous learning, I am passionate about leveraging my skills to drive innovation in the tech industry.</p>
+                <p>My journey in technology began in high school, where I first discovered my interest in programming and software development. Over the years, I have honed my skills through rigorous academic coursework and hands-on projects. I thrive on challenges and enjoy exploring new technologies to expand my expertise.</p>
+                <p>Beyond my professional pursuits, I am an avid learner and enjoy engaging with the developer community. In my free time, I work on personal projects, participate in tech forums, and attend developer meetups to stay updated with the latest trends and advancements in the field.</p>
+            </div>
+            <div>
+                <img src="IMG_20231202_102256_252.jpg" alt="Sachin Yadav" class="profile-img">
+            </div>
         </section>
     </main>
-    <footer>
+    <footer class="site-footer">
         <p>&copy; 2025 Sachin Yadav. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
